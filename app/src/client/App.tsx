@@ -5,6 +5,7 @@ import AppNavBar from './components/AppNavBar';
 import CookieConsentBanner from './components/cookie-consent/Banner';
 import { useMemo, useEffect, ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
 
 /**
  * use this component to wrap all child components
@@ -43,7 +44,7 @@ export default function App({ children }: { children: ReactNode }) {
   }, [location]);
 
   return (
-    <>
+    <ChakraProvider>
       <div className='min-h-screen dark:text-white dark:bg-boxdark-2'>
         {isAdminDashboard ? (
           <>{children}</>
@@ -55,6 +56,6 @@ export default function App({ children }: { children: ReactNode }) {
         )}
       </div>
       <CookieConsentBanner />
-    </>
+    </ChakraProvider>
   );
 }

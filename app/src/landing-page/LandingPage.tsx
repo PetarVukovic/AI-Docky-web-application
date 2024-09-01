@@ -23,7 +23,7 @@ export default function LandingPage() {
         <Clients />
         <Features features={features} />
         <Testimonials testimonials={testimonials} />
-        <FAQ faqs={faqs} />
+        <FAQ />
       </main>
 
       <Footer footerNavigation={footerNavigation} />

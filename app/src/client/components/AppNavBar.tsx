@@ -15,6 +15,7 @@ const navigation = [
   { name: 'AI Scheduler (Demo App)', href: routes.DemoAppRoute.build() },
   { name: 'File Upload (AWS S3)', href: routes.FileUploadRoute.build() },
   { name: 'Pricing', href: routes.PricingPageRoute.build() },
+  { name: "Chat with Docs", href: routes.ChatPageRoute.build() },
   { name: 'Documentation', href: DocsUrl },
   { name: 'Blog', href: BlogUrl },
 ];

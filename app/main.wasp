@@ -95,6 +95,11 @@ page LandingPage {
   component: import LandingPage from "@src/landing-page/LandingPage"
 }
 
+route ChatPageRoute {path:"/chat",to:ChatPage}
+page ChatPage{
+  component:import ChatPage from "@src/chat-page/ChatPage"
+}
+
 //#region Auth Pages
 route LoginRoute { path: "/login", to: LoginPage }
 page LoginPage {
